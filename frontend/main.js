@@ -51,7 +51,7 @@ function showMemberships(services) {
     trashBtn.classList.add("trash-btn");
     const trashIcon = document.createElement("i");
     trashIcon.classList.add("fa-solid");
-    trashIcon.classList.add("fa-trash-can");
+    trashIcon.classList.add("fa-trash");
     trashBtn.append(trashIcon);
     trashBtn.addEventListener("click", function () {
       fetch(`http://localhost:3000/memberships/${service._id}`, {
