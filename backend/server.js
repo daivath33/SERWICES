@@ -98,6 +98,7 @@ app.get('/memberships', async (req, res) => {
     res.status(500).send(err);
   }
 });
+
 app.post('/memberships', async (req, res) => {
   try {
     const con = await client.connect();
