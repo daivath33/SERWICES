@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Membership Page</title>
+    <link rel="stylesheet" href="./../css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <li class="memberships-link">Memberships</li>
+      <li class="users-link">Users</li>
+    </nav>
+
+    <main>
+      <section>
+        <h3>Create Membership</h3>
+        <form class="inputs-form">
+          <table>
+            <tr>
+              <td><label for="name">Name</label></td>
+              <td><input type="text" id="name" placeholder="Name" /></td>
+            </tr>
+            <tr>
+              <td><label for="price">Membership Price</label></td>
+              <td>
+                <input
+                  type="number"
+                  id="price"
+                  placeholder="Membership Price"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="description">Description</label></td>
+              <td>
+                <textarea
+                  name=""
+                  id="description"
+                  cols="30"
+                  rows="4"
+                ></textarea>
+              </td>
+            </tr>
+          </table>
+
+          <div class="btn-box">
+            <button id="cancel" class="btn inverse">Cancel</button>
+            <button class="btn">+ New Membership</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer><p>Copyright &copy; 2023 Membership Management</p></footer>
+    <script src="./../js/add-memb.js"></script>
+  </body>
+</html>
