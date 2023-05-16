@@ -28,7 +28,7 @@ form.addEventListener("submit", (e) => {
 
   const ipInput = document.querySelector("#ip").value;
   const membInput = document.querySelector("option").value;
-  console.log(nameInput, membInput);
+
   fetch(`http://localhost:3000/users/${membInput}`, {
     method: "POST",
     headers: {
@@ -44,6 +44,12 @@ form.addEventListener("submit", (e) => {
     location.reload();
     window.location.href = "./../html/users.html";
   });
+});
+
+const cancelAddUser = document.querySelector(".cancel");
+cancelAddUser.addEventListener("click", () => {
+  location.reload();
+  window.location.href = "./../html/users.html";
 });
 
 function getMemberships(memberships) {
