@@ -2,7 +2,6 @@ window.addEventListener("load", () => {
   fetch("http://localhost:3000/memberships")
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
       getMemberships(data);
     })
     .catch((err) => console.log(err));

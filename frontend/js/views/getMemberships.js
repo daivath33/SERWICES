@@ -33,6 +33,7 @@ export default function getMemberships(services) {
     trashIcon.classList.add("fa-solid");
     trashIcon.classList.add("fa-trash");
     trashBtn.append(trashIcon);
+
     trashBtn.addEventListener("click", function () {
       fetch(`http://localhost:3000/memberships/${service._id}`, {
         method: "DELETE",

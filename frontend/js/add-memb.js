@@ -1,9 +1,10 @@
 const membershipsLink = document.querySelector(".memberships-link");
-const usersLink = document.querySelector(".users-link");
 membershipsLink.classList.add("blue-text");
 membershipsLink.addEventListener("click", (e) => {
   window.location.href = "./../index.html";
 });
+
+const usersLink = document.querySelector(".users-link");
 usersLink.addEventListener("click", (e) => {
   window.location.href = "./../html/users.html";
 });
