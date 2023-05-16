@@ -278,11 +278,12 @@ section {
 }
 label {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
   margin-right: 15px;
 }
 label span {
   color: var(--clr-accent-400);
+  margin-left: 5px;
 }
 input,
 textarea,

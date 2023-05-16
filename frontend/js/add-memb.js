@@ -27,9 +27,8 @@ form.addEventListener("submit", (e) => {
     }),
   }).then(() => {
     location.reload();
+    window.location.href = "./../index.html";
   });
-
-  form.rest();
 });
 
 const cancelBtn = document.querySelector("#cancel");

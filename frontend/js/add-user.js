@@ -42,6 +42,7 @@ form.addEventListener("submit", (e) => {
     }),
   }).then(() => {
     location.reload();
+    window.location.href = "./../html/users.html";
   });
 });
 
